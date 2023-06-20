@@ -122,7 +122,7 @@ class UploadCommand(Command):
 
 # yapf: disable
 setup(
-    name="evo_kimera",
+    name="evo",
     version=open("evo/version").read(),
     description="Python package for the evaluation of odometry and SLAM",
     author="Antoni Rosinol, Michael Grupp",
