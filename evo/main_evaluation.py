@@ -527,7 +527,7 @@ def ensure_dir(dir_path):
     return True
 
 def aggregate_ape_results(list_of_datasets, list_of_pipelines):
-    RESULTS_DIR = '/home/tonirv/code/evo-1/results'
+    RESULTS_DIR = '/tmp/results'
     # Load results.
     print("Loading dataset results")
 
@@ -1225,7 +1225,7 @@ def regression_test_simple(test_name, param_names, param_values, only_compile_re
     # Check and create file structure
     dataset_names = ["V1_01_easy"]
     pipelines_to_run_list = build_list_of_pipelines_to_run(pipelines_to_run);
-    REGRESSION_TESTS_DIR = "/home/tonirv/code/evo-1/regression_tests/" + test_name
+    REGRESSION_TESTS_DIR = "/tmp/regression_tests/" + test_name
     check_and_create_regression_test_structure(REGRESSION_TESTS_DIR, param_names, param_values,
                                                dataset_names, pipelines_to_run_list, extra_params_to_modify)
 
@@ -1303,9 +1303,9 @@ def run(args):
         logger.debug("main_parser config:\n{}".format(parser_str))
         logger.debug(SEP)
 
-    RESULTS_DIR = '/home/tonirv/code/evo-1/results'
-    DATASET_DIR = '/home/tonirv/datasets/EuRoC'
-    BUILD_DIR = '/home/tonirv/code/spark_vio/build'
+    RESULTS_DIR = '/tmp/results'
+    DATASET_DIR = 'datasets/EuRoC'
+    BUILD_DIR = 'build'
 
     # Comment out any experiment that you do not want to run
     LIST_OF_EXPERIMENTS_TO_RUN = [\

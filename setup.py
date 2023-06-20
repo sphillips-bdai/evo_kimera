@@ -122,12 +122,12 @@ class UploadCommand(Command):
 
 # yapf: disable
 setup(
-    name="evo-1",
+    name="evo_kimera",
     version=open("evo/version").read(),
     description="Python package for the evaluation of odometry and SLAM",
     author="Antoni Rosinol, Michael Grupp",
     author_email="arosinol@mit.edu,",
-    url="https://github.com/ToniRV/evo-1",
+    url="https://github.com/sphillips-bdai/evo_kimera.git",
     license="GPLv3",
     keywords=[
         "SLAM", "odometry", "trajectory", "evaluation", "metric",

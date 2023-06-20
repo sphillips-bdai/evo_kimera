@@ -4,7 +4,7 @@
 
 | Linux / macOS |
 | :---: |
-| [![Build Status](https://travis-ci.org/ToniRV/evo-1.svg?branch=master)](https://travis-ci.org/ToniRV/evo-1)|
+| [![Build Status](https://github.com/sphillips-bdai/evo_kimera.git?branch=master)](https://github.com/sphillips-bdai/evo_kimera.git)|
 
 
 This packages provides executables and a small library for handling, evaluating and comparing the trajectory output of odometry and SLAM algorithms.
